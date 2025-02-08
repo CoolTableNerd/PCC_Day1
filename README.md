@@ -12,9 +12,7 @@ I will commit every practice and program to my github for transparency, a metric
 
 thank you for joining me. 
 
-# Chapter 2: Notes
-
-### Organized Notes: Python Basics (Variables, Strings, Whitespace, Numbers)
+### Python Basics (Variables, Strings, Whitespace, Numbers): Chapter 2
 
 ---
 
