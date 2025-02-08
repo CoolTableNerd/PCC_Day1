@@ -63,36 +63,7 @@ thank you for joining me.
 - **Readability**: Use underscores for large numbers (e.g., `population = 8_000_000_000`).
 - **Multiple Assignments**: Assign values in one line (e.g., `x, y, z = 1, 2, 3`).
 
----
-
-### Practice Exercises
-
-#### **Variables**
-1. Fix invalid variable names:  
-   - `3d_model = "cube"` → `model_3d = "cube"`
-   - `class = "Python Basics"` → `course_class = "Python Basics"`
-
-#### **Strings**
-2. Write code to:
-   - Convert `"hello world"` to title case.
-   - Remove `"https://"` from `"https://example.com"`.
-   - Print `"She said, 'Hello!'"` using appropriate quotes.
-
-#### **Whitespace**
-3. Use `\t` and `\n` to format:  
-   ```
-   Name: Alice
-   Age: 30
-   Country: Canada
-   ```
-
-#### **Numbers**
-4. Calculate `(5 + 3) ** 2 / 4` and print the result.  
-5. Assign three variables in one line: `a=10`, `b=2.5`, `c="Python"`.
-
----
-
-### Small Project: User Profile Generator
+### Small Project: User Profile Generator (project.py)
 
 #### **Objective**  
 Create a program that collects user details and prints a formatted profile.

@@ -1,0 +1,11 @@
+name = input("Name: ")
+age = int(input("Age: "))
+email = input("Email: ")
+website = input("Website: ")
+aspiringSalary = input("Aspiring Salary: $")
+
+print(f"Name:\t\t {name.title()}")
+print(f"Age:\t\t {age}")
+print(f"Email:\t\t {email.lower().strip()}")
+print(f"Website:\t {website.removeprefix("https://").strip()}")
+print(f"Salary:\t\t ${aspiringSalary}")
