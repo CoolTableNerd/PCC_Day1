@@ -4,7 +4,7 @@
 
 I haven't practiced coding or python in....lets just say a long time. Today im starting out with remembering the basics - printing, user inputs, github commits - for a refresher.
 
-I was shocked to see Repl.it rebranded to an ai coding website as that's where i used to go to practice my Python (that should tell you how long it's been), so im using trust worthy VS Code.
+I was shocked to see Repl.it rebrand to an ai coding website as that's where i used to go to practice my Python (that should tell you how long it's been), so im using trust worthy VS Code.
 
 I am studying from Python Crash Course by Eric Matthes -- it's broken up in 2 parts (Basics and Projects) -- of course i'm starting with the basics, but i may skip over some topics like instillation, variables, data types as i still remain comfortable with those. 
 
@@ -14,72 +14,103 @@ thank you for joining me.
 
 # Chapter 2: Notes
 
-for day 1 i jumped over Chapter 1 since that went over Python installation and i already have that running on my machine. 
+### Organized Notes: Python Basics (Variables, Strings, Whitespace, Numbers)
 
-Chapter 2 focused on working with variables, displaying strings, using string methods, organizing whitespace and numerical data. 
+---
 
-### Variables - boxes you store data in
-variables was pretty much a refresher as im already aware of the do's and don'ts for using them. 
-* no spaces (`full name = 'Daryl Corbin`)
-* can't start variable with a number (`24KobeBryantTeam = 'Lakers'`)
-* avoid using Python keywords (class, break, if, else etc) [full list here](https://www.w3schools.com/python/python_ref_keywords.asp)
-* standard practice to start variable with a lowercase letter (`losAngeles`) 
-* using camel case (`losAngeles`) where the start of the second word is capitalized or underscores (`los_angeles`) to breakup words for readability
+#### **1. Variables**
+- **Purpose**: Containers for storing data.
+- **Naming Rules**:
+  - No spaces (e.g., `full_name`, not `full name`).
+  - Cannot start with numbers (e.g., `kobe24Team`, not `24KobeTeam`).
+  - Avoid Python keywords (e.g., `list`, `class`, `if`).
+- **Conventions**:
+  - Use lowercase for variable names (e.g., `los_angeles`).
+  - Camel case (`losAngeles`) or underscores (`los_angeles`) for readability.
 
-### Strings - holds characters in a sequence 
-anything inside quotes is considered a string. 
-* strings can start with single quotations (`' '`) or double quotations (`" "`)
-    - when using singles quotes, the compiler would throw an error with the use of an apostrophe inside. (`'that is Tom's coat'`) (error)
-    - when using double quotes, the compiler would throw an error with the use of another set of double quotes (`"this morning Tom asked, "how's the coffee?"`) <br/>
-[!TIP] 
-use singular quotations when quoting something is necessary / use double quotations when using apostrophes are necessary (or a possibility)
+---
 
-### String Methods - allows text manipulation (line 21-23)
-* methods are attached to the end of variables with parentheses
-* Python returns a new string and doesn't change the value of the variable
+#### **2. Strings**
+- **Definition**: A sequence of characters enclosed in quotes (`' '` or `" "`).
+- **Quotes Best Practices**:
+  - Use double quotes for apostrophes: `"That's Tom's coat."`
+  - Use single quotes for internal quotes: `'Tom asked, "How are you?"'`
+- **String Methods**:
+  - **Common Methods**:
+    - `.title()`: `"good will hunting"` → `"Good Will Hunting"`
+    - `.upper()`: `"hello"` → `"HELLO"`
+    - `.lower()`: `"HELLO"` → `"hello"`
+    - `.strip()`: Removes leading/trailing whitespace.
+  - **Prefix/Suffix Removal**:
+    - `.removeprefix("https://")`: `"https://google.com"` → `"google.com"`
+    - `.removesuffix(".txt")`: `"report.txt"` → `"report"`.
 
-some common methods:
-nothing being included inside the parentheses:
-* .title() - title case: makes the start of ever word capitalized. (Good Will Hunting)
-* .uppercase() - capitalizes every letter (GOOD WILL HUNTING)
-* .lowercase() - lowercase: makes all letters lowercase (good will hunting)
-* .strip() - removes whitespace from left and the right of entry
+---
 
-methods that require data inside the parentheses: <br>
-`.removeprefix('https://')` - removes the prefix if it exists at the start of the string.
-* to clean up or modify strings by removing a specific beginning.
-* to ensure that a string no longer starts with a particular substring.
-* working with structured data like file paths, URLs, or identifiers where prefixes are common.<br/></br>
-`.removesuffix(".txt")` -  removes the suffix if it exists at the end of the string. 
-* to clean up or modify strings by removing a specific ending.
-* to ensure that a string no longer ends with a particular substring.
-* working with file extensions, URLs, or other structured data where suffixes are common.
+#### **3. Whitespace**
+- **Non-Printing Characters**:
+  - `\t`: Adds a tab (e.g., `print("Name:\tDaryl")` → `Name:    Daryl`).
+  - `\n`: Creates a new line (e.g., `print("Line 1\nLine 2")`).
 
-[more string methods](https://www.w3schools.com/python/python_ref_string.asp)
+---
 
-### WhiteSpace - non printing characters (spaces/tabs/end-lines)
-`\t` - tab character: indentation or spacing in strings. <br/>
-`\n` - new line: creates a line break in strings, making the text continue on the next line.
+#### **4. Numbers**
+- **Floats**: Decimal numbers (e.g., `3.14`). Mixing integers/floats in operations results in floats.
+- **Constants**: Use all caps (e.g., `TAX_RATE = 0.07`). Not enforced by Python but treated as convention.
+- **Math Operations**:
+  - Follows PEMDAS: `(2 + 3) * 4 = 20`.
+  - Exponents: `3 ** 2 = 9`.
+- **Readability**: Use underscores for large numbers (e.g., `population = 8_000_000_000`).
+- **Multiple Assignments**: Assign values in one line (e.g., `x, y, z = 1, 2, 3`).
 
-### Numbers (lines 60-73)
-* i skipped over integers because it's the basic addition/subtraction/multiplying and dividing, but i did go over floats and some math expressions again since they can get tricky when it complies and i want to make sure my logic remains sound all around. <br/>
+---
 
-Floats: numbers with a decimal point. decimal can appear in any position of the number. `0.1`
-* when adding/dividing an integer with a float the result will always be a float `1 + 2.0 = 3.0`
+### Practice Exercises
 
-Constants: variable where the value remains the same throughout the entire program. `MINIMUM_WAGE = 7.50`
-* Python does not have constants built in, Python programmers use all caps to indicate a value should be treated as a constant
+#### **Variables**
+1. Fix invalid variable names:  
+   - `3d_model = "cube"` → `model_3d = "cube"`
+   - `class = "Python Basics"` → `course_class = "Python Basics"`
 
+#### **Strings**
+2. Write code to:
+   - Convert `"hello world"` to title case.
+   - Remove `"https://"` from `"https://example.com"`.
+   - Print `"She said, 'Hello!'"` using appropriate quotes.
 
-Python supports order or operation (PEMDAS) `(2+3)*5` | `2+3*4`
+#### **Whitespace**
+3. Use `\t` and `\n` to format:  
+   ```
+   Name: Alice
+   Age: 30
+   Country: Canada
+   ```
 
-`**` - two asterisks represent exponents `3**2 = 9`
- 
-underscoring numbers can help with readability when creating a value `population = 8_000_000_000`
-* Python only prints the digits in the compiler
+#### **Numbers**
+4. Calculate `(5 + 3) ** 2 / 4` and print the result.  
+5. Assign three variables in one line: `a=10`, `b=2.5`, `c="Python"`.
 
-multiple assignments can be assigned on one line: `x,y,z = 2,4,2`
-* each variable and value needs to be separated by commas
+---
+
+### Small Project: User Profile Generator
+
+#### **Objective**  
+Create a program that collects user details and prints a formatted profile.
+
+#### **Requirements**
+1. Use variables to store:
+   - Name (title case)
+   - Age (integer)
+   - Email (lowercase, strip whitespace)
+   - Website URL (remove `"https://"` if present)
+   - Salary (formatted with underscores, e.g., `50_000`).
+2. Print the profile using `\t` and `\n` for readability.
+
+#### **Steps**
+1. Collect input for name, age, email, website, and salary.
+2. Apply string methods to clean/format data.
+3. Use constants for fixed values (e.g., `CURRENCY = "$"`).
+4. Print the formatted profile.
 
 # Reflections
 
